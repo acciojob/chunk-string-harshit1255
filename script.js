@@ -4,9 +4,10 @@ function stringChop(str, size) {
 	let count  = parseInt(str.length/size);
 	let j=0;
 	let rem =str.length%size;
+
 	for(let i=0;i<count;i++)
 		{
-			arr.push(str.substr(j,5));
+			arr.push(str.substr(j,size));
 			j+=size;
 		}
 	if(rem!==0)
@@ -20,3 +21,4 @@ function stringChop(str, size) {
 const str = prompt("Enter String.");
 const size = prompt("Enter Chunk Size.");
 alert(stringChop(str, size));
+ 
