@@ -3,7 +3,7 @@ function stringChop(str, size) {
 	let arr=[]
 	let count  = parseInt(str.length/size);
 	let j=0;
-	let rem =str.legth%size;
+	let rem =str.length%size;
 	for(let i=0;i<count;i++)
 		{
 			arr.push(str.substr(j,5));
