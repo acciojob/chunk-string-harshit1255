@@ -12,7 +12,7 @@ function stringChop(str, size) {
 		}
 	if(rem!==0)
 	{
-		arr.push(str.substr(j,5));
+		arr.push(str.substr(j,size ));
 	}
 	return arr;
 }
